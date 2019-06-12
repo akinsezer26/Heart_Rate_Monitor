@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/ly_takvim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+        <RelativeLayout
+            android:id="@+id/baslik"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_margin="3dp">
+
+            <Button
+                android:id="@+id/btn_frgtoday_tarih"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:text="OK"
+                android:textColor="@color/color_general_pink"
+                android:textAlignment="textStart"
+                android:background="@drawable/ic_transparan"
+                android:onClick="Tiklandi"/>
+
+            <Button
+                android:id="@+id/btn_frgtoday_profile"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_person"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:onClick="Tiklandi"
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ly_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <noman.weekcalendar.WeekCalendar
+                android:id="@+id/weekCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/baslik"
+                app:daysTextColor="@color/colorblack"
+                app:weekTextColor="@color/colorblack"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_calendar_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="15dp"/>
+    </LinearLayout>
+       <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ly_takvim"
+        android:layout_above="@id/navigation"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation"
+            app:itemIconTint="@color/selected_color"
+            app:itemTextColor="@color/selected_color"
+            />
+
+</RelativeLayout>

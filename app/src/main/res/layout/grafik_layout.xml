@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/arka">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:title="Graph Title"
+        app:seriesTitle="Foobar"
+        app:seriesType="line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorwhite"/>
+
+    <ListView
+        android:layout_marginTop="15dp"
+        android:id="@+id/lstgraph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/graph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

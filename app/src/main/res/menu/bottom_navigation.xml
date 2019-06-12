@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_today"
+        android:icon="@drawable/ic_today_black_24dp"
+        android:title="Bugün"/>
+    <item
+        android:id="@+id/nav_pulse"
+        android:icon="@drawable/ic_heart"
+        android:title="Nabız"/>
+
+
+    <item
+        android:id="@+id/nav_statistic"
+        android:icon="@drawable/ic_istatik"
+        android:title="İstatistik"/>
+</menu>

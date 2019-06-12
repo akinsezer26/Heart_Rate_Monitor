@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arka"
+    >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/SU_Isim"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/SU_Soyisim"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/SU_Soyisim"
+            android:hint="İsim"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorblack" />
+
+        <EditText
+            android:id="@+id/SU_Soyisim"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/SU_Email"
+            android:layout_alignStart="@+id/SU_Email"
+            android:layout_below="@+id/SU_Isim"
+            android:layout_marginTop="15dp"
+            android:hint="Soyisim"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorblack" />
+
+        <EditText
+            android:id="@+id/SU_Sifre"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignEnd="@+id/button_kayitOl"
+            android:layout_alignRight="@+id/button_kayitOl"
+            android:layout_below="@+id/SU_Soyisim"
+            android:layout_marginTop="15dp"
+            android:hint="Şifre"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorblack" />
+
+        <EditText
+            android:id="@+id/SU_Telefon"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/SU_Email"
+            android:layout_alignStart="@+id/SU_Email"
+            android:layout_below="@+id/SU_Email"
+            android:layout_marginTop="15dp"
+            android:hint="Telefon"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorblack" />
+
+        <EditText
+            android:id="@+id/SU_Email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/SU_Sifre"
+            android:layout_alignStart="@+id/SU_Sifre"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:hint="E-mail"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorblack" />
+
+        <EditText
+            android:id="@+id/SU_DogumTarihi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="15dp"
+            android:hint="Doğum Tarihi"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/SU_Boy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="15dp"
+            android:hint="Boy"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/SU_Kilo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kilo"
+            android:layout_marginTop="15dp"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_kayitOl"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/SU_Telefon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@android:drawable/gallery_thumb"
+            android:onClick="KayitOl"
+            android:text="Kayıt Ol"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>
